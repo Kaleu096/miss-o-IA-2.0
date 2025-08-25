@@ -1,10 +1,9 @@
 :root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+    --cor-fundo: #0A0A0A;
+    --cor-principal: #1C1C1C;
+    --cor-secundaria: #333333; 
+    --cor-destaque: #FFD700; 
+    --cor-texto: #F5F5F5;
 }
 
 body {
@@ -14,6 +13,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 .caixa-principal{
@@ -21,23 +22,38 @@ body {
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
 }
 
 h1{
     color: var(--cor-destaque);
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 15px;
-    transition: background-color 0.3s;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+    transform: scale(1.05);
+}
+
+.caixa-resultado {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
